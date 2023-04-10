@@ -5,13 +5,14 @@ import { useLoaderData } from 'react-router-dom';
 import Features from '../Features/Features';
 
 const Home = () => {
-    const categories =useLoaderData();
-    //console.log (categories)
+    
+    const jobs=useLoaderData();
+    //console.log (jobs)
     return (
         <div>
             <Banner></Banner>
-            <Category categories={categories}></Category>
-            <Features></Features>
+            <Category></Category>
+            <Features jobs={jobs}></Features>
         </div>
     );
 };

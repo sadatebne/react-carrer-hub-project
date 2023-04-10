@@ -1,8 +1,15 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './Category.css'
 import DisplayCategory from '../DisplayCategory/DisplayCategory';
 
-const Category = ({ categories }) => {
+const Category = () => {
+
+    const [categories, setCategories]=useState([])
+    useEffect(()=>{
+        fetch('jobCategory.json')
+        .then(res=>res.json())
+        .then(data=>setCategories(data))
+    },[])
 
     return (
         <div className='category-details'>
@@ -12,7 +19,7 @@ const Category = ({ categories }) => {
                 {
                     categories.map(category => <DisplayCategory key={category.id} category={category}></DisplayCategory>)
                 }
-            </div>
+        </div>
 
 
         </div>

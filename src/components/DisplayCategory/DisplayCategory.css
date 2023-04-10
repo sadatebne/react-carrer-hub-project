@@ -1,0 +1,10 @@
+.category-show-details{
+    text-align: left;
+    padding: 40px;
+    background: linear-gradient(90deg, rgba(126, 144, 254, 0.05) 0%, rgba(152, 115, 255, 0.05) 100%);
+}
+
+.category-show-details img{
+    width: 40px;
+    height: 40px;
+}

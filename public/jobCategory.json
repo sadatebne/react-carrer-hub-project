@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "image": "https://cdn-icons-png.flaticon.com/512/5696/5696360.png",
+        "job_title": "Software Engineer",
+        "available_jobs": 300
+    },
+    {
+        "id": 2,
+        "image": "https://cdn-icons-png.flaticon.com/512/8637/8637114.png",
+        "job_title": "Data Analyst",
+        "available_jobs": 500
+    },
+    {
+        "id": 3,
+        "image": "https://cdn-icons-png.flaticon.com/512/2621/2621283.png",
+        "job_title": "Product Manager",
+        "available_jobs": 40
+    },
+    {
+        "id": 4,
+        "image": "https://cdn-icons-png.flaticon.com/512/2835/2835722.png",
+        "job_title": "Marketing Specialist",
+        "available_jobs": 4
+    }
+]

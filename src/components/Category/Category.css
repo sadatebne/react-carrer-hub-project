@@ -1,0 +1,13 @@
+.category-details h2{
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 48px;
+    margin-bottom: 0px;
+}
+
+.category{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 25px;
+}

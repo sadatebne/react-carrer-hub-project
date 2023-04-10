@@ -1,0 +1,11 @@
+.header-details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.header-nav a{
+    margin-left: 42px;
+    color: #757575;
+}

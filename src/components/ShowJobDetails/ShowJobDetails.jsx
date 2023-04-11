@@ -1,12 +1,15 @@
 import React from 'react';
 import './ShowJobDetails.css'
+import { addToDb } from '../../utilities/fakedb';
 
 const ShowJobDetails = ({ job }) => {
-    console.log(job)
+    //console.log(job)
     const { id, company_logo, company_name, contact_information, educational_requirements, experiences, fulltime_or_parttime, job_description, job_responsibility, job_title, location, remote_or_onsite, salary } = job
 
-    
-    
+    const handleJobs=(id)=>{
+        addToDb(id);
+    }  
+
     return (
         <div className='showJobDetails'>
             <div className='showJobDetails-part-1'>
@@ -33,6 +36,9 @@ const ShowJobDetails = ({ job }) => {
                 <p><span>Email: </span>{contact_information && contact_information.email}</p>
                 <p><span>Address: </span>{location}</p>
 
+                <div>
+                     <button onClick={()=>handleJobs(id)}>Apply Now</button>
+                </div>
 
             </div>
         </div>

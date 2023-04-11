@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useLoaderData, useParams } from 'react-router-dom';
+import ShowJobDetails from '../ShowJobDetails/ShowJobDetails';
 
 const JobDetails = () => {
      const {jobDetails}=useParams();
@@ -17,21 +18,17 @@ const JobDetails = () => {
        
     },[])
 
-    console.log(job)
-    // const [jobs, setJobs]=useState([])
-
-    // useEffect(()=>{
-    //     fetch('jobDetails.json')
-    //     .then(res=>res.json())
-    //     .then(data=>setJobs(data))
-
-    //     const j= jobs.map(job=>console.log(job))
-    //     // console.log(j)
-    // },[])
+    //console.log(job)
+    
 
     return (
         <div>
-            <h1>Job Details: {job.id}</h1>
+            <div>
+                <h1>Job Details</h1>
+            </div>
+            <div>
+                <ShowJobDetails job={job}></ShowJobDetails>
+            </div>
         </div>
     );
 };

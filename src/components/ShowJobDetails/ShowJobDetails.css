@@ -7,3 +7,9 @@
 .showJobDetails-part-1{
 text-align: left;
 }
+
+.showJobDetails-part-2{
+    background-color: lightblue;
+    text-align: left;
+    padding: 20px;
+}

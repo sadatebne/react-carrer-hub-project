@@ -13,6 +13,9 @@ const Features = ({jobs}) => {
                     jobs.map(job=><ShowFeatures key={job.id} job={job}></ShowFeatures>)
                 }
             </div>
+            <div>
+                <button className='btn-show'>Show All Jobs</button>
+            </div>
         </div>
     );
 };

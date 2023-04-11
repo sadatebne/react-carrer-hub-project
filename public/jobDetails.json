@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "company_logo": "https://www.vhv.rs/dpng/d/0-6193_transparent-background-google-logo-hd-png-download.png",
+        "company_logo": "https://www.freepnglogos.com/uploads/google-logo-png/google-logo-old-logok-21.png",
         "job_title": "Front-end Developer",
         "company_name": "Google",
         "remote_or_onsite": "Remote",
@@ -55,7 +55,7 @@
     },
     {
         "id": 4,
-        "company_logo": "https://p1.hiclipart.com/preview/164/304/900/car-logo-tesla-inc-typography-text-letter-disruptive-innovation-png-clipart.jpg",
+        "company_logo": "https://www.freepnglogos.com/uploads/tesla-logo-png-red-31.png",
         "job_title": "Data Scientist",
         "company_name": "Tesla",
         "remote_or_onsite": "Onsite",
@@ -73,7 +73,7 @@
     },
     {
         "id": 5,
-        "company_logo": "https://p.kindpng.com/picc/s/264-2643146_twitter-logo-twitter-name-logo-png-transparent-png.png",
+        "company_logo": "https://freepngimg.com/thumb/logo/69680-product-brand-design-logo-font-twitter.png",
         "job_title": "UX Designer",
         "company_name": "Twitter",
         "remote_or_onsite": "Onsite",

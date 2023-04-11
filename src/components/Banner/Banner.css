@@ -33,3 +33,15 @@
     background: linear-gradient(90deg, #7E90FE 0%, #9873FF 100%);
     border-radius: 8px;
 }
+
+@media screen and (max-width:576px){
+    .banner-details {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .banner-details img {
+        width: 100%;
+        height: 400;
+    }
+}

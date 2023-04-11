@@ -10,3 +10,10 @@
     border-radius: 8px;
     margin-top: 20px;
 }
+
+@media screen and (max-width:576px){
+    .features{
+        grid-template-columns: repeat(1, 1fr);
+        gap:24px;
+    }
+}

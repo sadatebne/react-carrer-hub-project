@@ -2,7 +2,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-
 }
 
 .header-nav a {
@@ -14,4 +13,18 @@
     font-weight: 800;
     font-size: 32px;
     color: #1A1919;
+}
+
+@media screen and (max-width:576px){
+    .header-details {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        
+    }
+
+    .header-nav a {
+       display: flex;
+       flex-direction: column;
+    }
 }

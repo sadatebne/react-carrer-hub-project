@@ -18,7 +18,6 @@ const JobDetails = () => {
        
     },[])
 
-    //console.log(job)
     
 
     return (

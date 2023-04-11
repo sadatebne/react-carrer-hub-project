@@ -1,14 +1,15 @@
 import React from 'react';
 import './ShowJobDetails.css'
 import { addToDb } from '../../utilities/fakedb';
+import { Link } from 'react-router-dom';
 
 const ShowJobDetails = ({ job }) => {
     //console.log(job)
     const { id, company_logo, company_name, contact_information, educational_requirements, experiences, fulltime_or_parttime, job_description, job_responsibility, job_title, location, remote_or_onsite, salary } = job
 
-    const handleJobs=(id)=>{
+    const handleJobs = (id) => {
         addToDb(id);
-    }  
+    }
 
     return (
         <div className='showJobDetails'>
@@ -25,19 +26,21 @@ const ShowJobDetails = ({ job }) => {
                 </div>
             </div>
 
-            <div className='showJobDetails-part-2'>
-                <h3>Job Details</h3>
-                <hr />
-                <p><span>Salary: </span>{salary}</p>
-                <p><span>Job Title: </span>{job_title}</p>
-                <h3>Contact Information</h3>
-                <hr />
-                <p><span>Phone: </span>{contact_information && contact_information.phone}</p>
-                <p><span>Email: </span>{contact_information && contact_information.email}</p>
-                <p><span>Address: </span>{location}</p>
+            <div>
+                <div className='showJobDetails-part-2'>
+                    <h3>Job Details</h3>
+                    <hr />
+                    <p><span>Salary: </span>{salary}</p>
+                    <p><span>Job Title: </span>{job_title}</p>
+                    <h3>Contact Information</h3>
+                    <hr />
+                    <p><span>Phone: </span>{contact_information && contact_information.phone}</p>
+                    <p><span>Email: </span>{contact_information && contact_information.email}</p>
+                    <p><span>Address: </span>{location}</p>
+                </div>
 
                 <div>
-                     <button onClick={()=>handleJobs(id)}>Apply Now</button>
+                    <button className='btn-apply' onClick={() => handleJobs(id)}><Link to="/applied_jobs"><span className='btn-view-text'>Apply Now</span></Link></button>
                 </div>
 
             </div>

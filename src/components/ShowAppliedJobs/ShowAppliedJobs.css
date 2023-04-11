@@ -1,0 +1,31 @@
+.Show-applied-jobs{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    border: 2px solid whitesmoke;
+    margin-bottom: 20px;
+}
+
+.applied-jobs{
+    flex-grow: 1;
+    text-align: left;
+}
+.Show-applied-jobs img {
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    background: #F4F4F4;
+}
+
+.btn-applied-jobs , .applied-jobs-p {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.btn-view-dtls{
+    margin-right: 20px;
+    background: linear-gradient(90deg, #7E90FE 0%, #9873FF 100%);
+    border-radius: 8px;
+    margin-top: 10px;
+}

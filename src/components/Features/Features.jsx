@@ -1,20 +1,28 @@
-import React from 'react';
+import React, { useState } from 'react';
 import ShowFeatures from '../ShowFeatures/ShowFeatures';
 import './Features.css'
 
-const Features = ({jobs}) => {
-    //console.log (jobs)
+const Features = ({ jobs }) => {
+
+    const [showAllJobs, setShowAllJobs] = useState(false);
+
+    const handleShowAllJobs = () => {
+        setShowAllJobs(true);
+    };
+
     return (
         <div className='category-details'>
             <h2>Featured Jobs</h2>
             <p>Explore thousands of job opportunities with all the information you need. Its your future</p>
             <div className='features'>
                 {
-                    jobs.map(job=><ShowFeatures key={job.id} job={job}></ShowFeatures>)
+                    showAllJobs ?
+                        jobs.map(job => <ShowFeatures key={job.id} job={job}></ShowFeatures>) :
+                        jobs.slice(0, 4).map(job => <ShowFeatures key={job.id} job={job}></ShowFeatures>)
                 }
             </div>
             <div>
-                <button className='btn-show'>Show All Jobs</button>
+                <button className='btn-show' onClick={handleShowAllJobs}>Show All Jobs</button>
             </div>
         </div>
     );

@@ -4,6 +4,8 @@ import { addToDb } from '../../utilities/fakedb';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLocationDot, faDollarSign, faPhone,faEnvelope,faUserPen } from '@fortawesome/free-solid-svg-icons'
+import { toast } from 'react-toastify';
+
 
 const ShowJobDetails = ({ job }) => {
     //console.log(job)
@@ -11,6 +13,7 @@ const ShowJobDetails = ({ job }) => {
 
     const handleJobs = (id) => {
         addToDb(id);
+        toast.success("🎉 Congratulations, your application has been submitted!");
     }
 
     return (

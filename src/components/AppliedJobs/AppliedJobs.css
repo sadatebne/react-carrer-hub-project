@@ -1,0 +1,24 @@
+.show-jobs {
+    margin-top: 150px;
+}
+
+.select-option {
+    position: relative;
+}
+
+.select-option select {
+    position: absolute;
+    left: 1150px;
+    top: 10px;
+    padding: 20px;
+    width: 120px;
+    height: 65px;
+    background-color: aliceblue;
+}
+
+.select-option select option {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+}

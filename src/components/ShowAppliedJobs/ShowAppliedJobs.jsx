@@ -3,7 +3,7 @@ import './ShowAppliedJobs.css'
 import { Link } from 'react-router-dom';
 
 const ShowAppliedJobs = ({ job }) => {
-    console.log(job)
+    //console.log(job)
 
     const { id, company_logo, company_name, contact_information, educational_requirements, experiences, fulltime_or_parttime, job_description, job_responsibility, job_title, location, remote_or_onsite, salary } = job
 

@@ -9,7 +9,7 @@ const Banner = () => {
                 <p>Explore thousands of job opportunities with all the information you need. Its your future. Come find it. Manage all your job application from start to finish.</p>
                 <button className='btn-header'>Get Started</button>
             </div>
-            <img src="../../../src/assets/images/user.png" alt="" />
+            <img src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1480&q=80" alt="" />
         </div>
     );
 };

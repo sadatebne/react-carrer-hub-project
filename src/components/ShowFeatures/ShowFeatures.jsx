@@ -1,6 +1,8 @@
 import React from 'react';
 import './ShowFeatures.css'
 import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faLocationDot, faDollarSign } from '@fortawesome/free-solid-svg-icons'
 
 const ShowFeatures = ({job}) => {
     //console.log(job)
@@ -15,8 +17,8 @@ const ShowFeatures = ({job}) => {
                 <button>{fulltime_or_parttime}</button>
             </div>
             <div className='feature-para'>
-                <p>{location}</p>
-                <p>Salary : {salary}</p>
+                <p><FontAwesomeIcon icon={faLocationDot} /> {location}</p>
+                <p><FontAwesomeIcon icon={faDollarSign} /> Salary : {salary}</p>
             </div>
             <button className='btn-view'><Link to={`/${id}`}><span className='btn-view-text'>View Details</span></Link></button>
         </div>

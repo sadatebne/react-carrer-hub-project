@@ -2,6 +2,8 @@ import React from 'react';
 import './ShowJobDetails.css'
 import { addToDb } from '../../utilities/fakedb';
 import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faLocationDot, faDollarSign, faPhone,faEnvelope,faUserPen } from '@fortawesome/free-solid-svg-icons'
 
 const ShowJobDetails = ({ job }) => {
     //console.log(job)
@@ -14,8 +16,8 @@ const ShowJobDetails = ({ job }) => {
     return (
         <div className='showJobDetails'>
             <div className='showJobDetails-part-1'>
-                <p><span>Job Description: </span>{job_description}</p>
-                <p><span>Job Responsibility: </span>{job_responsibility}</p>
+                <p><span className='j-title'>Job Description: </span>{job_description}</p>
+                <p><span className='j-title'>Job Responsibility: </span>{job_responsibility}</p>
                 <div>
                     <h3>Educational Requirements:</h3>
                     <p>{educational_requirements}</p>
@@ -30,13 +32,13 @@ const ShowJobDetails = ({ job }) => {
                 <div className='showJobDetails-part-2'>
                     <h3>Job Details</h3>
                     <hr />
-                    <p><span>Salary: </span>{salary}</p>
-                    <p><span>Job Title: </span>{job_title}</p>
+                    <p><FontAwesomeIcon icon={faDollarSign} /> <span>Salary: </span>{salary}</p>
+                    <p><FontAwesomeIcon icon={faUserPen} /> <span>Job Title: </span>{job_title}</p>
                     <h3>Contact Information</h3>
                     <hr />
-                    <p><span>Phone: </span>{contact_information && contact_information.phone}</p>
-                    <p><span>Email: </span>{contact_information && contact_information.email}</p>
-                    <p><span>Address: </span>{location}</p>
+                    <p><FontAwesomeIcon icon={faPhone} /> <span>Phone: </span>{contact_information && contact_information.phone}</p>
+                    <p><FontAwesomeIcon icon={faEnvelope} /> <span>Email: </span>{contact_information && contact_information.email}</p>
+                    <p><FontAwesomeIcon icon={faLocationDot} /> <span>Address: </span>{location}</p>
                 </div>
 
                 <div>

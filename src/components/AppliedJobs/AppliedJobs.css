@@ -22,3 +22,20 @@
     font-weight: 600;
     font-size: 20px;
 }
+
+@media screen and (max-width:576px) {
+
+    .select-option {
+        position: relative;
+    }
+    
+    .select-option select {
+        position: absolute;
+        left: 150px;
+        top: 10px;
+        padding: 20px;
+        width: 120px;
+        height: 65px;
+        background-color: aliceblue;
+    }
+}

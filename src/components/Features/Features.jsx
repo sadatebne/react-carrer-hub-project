@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import ShowFeatures from '../ShowFeatures/ShowFeatures';
 import './Features.css';
 
+
 const Features = ({ jobs }) => {
   const [showAllJobs, setShowAllJobs] = useState(false);
 

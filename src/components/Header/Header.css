@@ -15,16 +15,52 @@
     color: #1A1919;
 }
 
+.menu-bar{
+
+    visibility: hidden;
+    
+}
+
 @media screen and (max-width:576px){
+
+    .header{
+        margin-bottom: 300px;
+        transition-duration: 1s;
+    }
+
+    .no-header{
+        margin-bottom: 0px;
+        transition-duration: 1s;
+    }
+    
     .header-details {
         flex-direction: column;
         align-items: center;
         gap: 20px;
+        position: absolute;
+        top: -420px;
+        left: 100px;
+        transition-duration: 1s;
         
+    }
+
+    .header-details-open{
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        position: absolute;
+        top: 6px;
+        left: 100px;
+        transition-duration: 1s;
     }
 
     .header-nav a {
        display: flex;
        flex-direction: column;
+    }
+
+    .menu-bar{
+        text-align: right;
+        visibility: visible;
     }
 }

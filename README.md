@@ -11,4 +11,4 @@ This Project Build Based on React...
 - Job filter using Remote and FullTime.. 
 
 ## Live Site Link
-- Link: [https://jobsfinder-react-2023-sdt-work.netlify.app/applied_jobs](https://jobsfinder-react-2023-sdt-work.netlify.app)
+- Link: [https://jobsfinder-react-2023-sdt-work.netlify.app](https://jobsfinder-react-2023-sdt-work.netlify.app)
